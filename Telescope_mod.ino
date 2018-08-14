@@ -1,11 +1,16 @@
-const unsigned int PIN_RA_STEP = 2;
+//Code written by Sumukh Anil Purohit
+//Licenced under GNU GPL v2
+//
+//Arduino Based telescope single axis tracker
+
+const unsigned int PIN_RA_STEP = 2;          //define step pin
 const unsigned int PIN_RA_DIRECTION = 3;
-const unsigned int PIN_8X = 4;
+const unsigned int PIN_8X = 4;               //8X speed only when switch is pusshed
 const unsigned int PIN_2X = 5;
-const unsigned int PIN_RA_MINUS = 6;
-const unsigned long STEP_INTERVAL_SIDEREAL = 9.0838509316769500;     // milisecond
-const unsigned long STEP_INTERVAL_2X_SIDEREAL = 4.5419254658384700;  // miliseconds
-const unsigned long STEP_INTERVAL_8X_SIDEREAL = 1.1354813664596200;   // miliseconds
+const unsigned int PIN_RA_MINUS = 6;        // change the direction
+const unsigned long STEP_INTERVAL_SIDEREAL = 9.0838509316769500;     // milisecond    this is configured for my telescope and gear ratios
+const unsigned long STEP_INTERVAL_2X_SIDEREAL = 4.5419254658384700;  // miliseconds   this is configured for my telescope and gear ratios
+const unsigned long STEP_INTERVAL_8X_SIDEREAL = 1.1354813664596200;   // miliseconds  this is configured for my telescope and gear ratios
 
 void setup()
 {
